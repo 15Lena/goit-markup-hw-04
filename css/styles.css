@@ -157,6 +157,8 @@ img {
 
 .link-contacts-mail,
 .link-header-phone {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -175,6 +177,13 @@ img {
 .link-header-phone:focus {
   color: var(--blue--);
 }
+
+.contact-icon {
+  width: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /*Шапка сайту*/
 
 .section {
@@ -188,6 +197,12 @@ img {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/header/foto1.jpg),
+    linear-gradient(to top, #2f303a, #8284a0);
 }
 
 .title-button {
