@@ -430,9 +430,23 @@ img {
   border-radius: 4px;
 }
 
+.clients-link:hover {
+  border-color: var(--blue--);
+}
+
+.clients-icons {
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-icons,
+.clients-link:focus .clients-icons {
+  fill: var(--blue--);
+}
+
 /*Підвал*/
 
 .footer {
+  display: flex;
   background: var(--grey--);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -467,6 +481,34 @@ img {
   text-decoration: none;
 }
 
+.footer-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container {
+  display: block;
+  margin-right: 70px;
+}
+
+.footer-container:last-child {
+  margin-right: 0;
+}
+
+.socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /*Пoртфоліо*/
 
 /*filters*/
@@ -499,8 +541,6 @@ img {
   border-radius: 4px;
   width: 73px;
   height: 38px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background: var(--blue--);
   cursor: pointer;
   border: none;
@@ -511,6 +551,8 @@ img {
 .btn-filters1:hover,
 .btn-filters1:focus {
   background: var(--blue--);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-filters2,
@@ -540,24 +582,32 @@ img {
 .btn-filters2:focus {
   background: var(--blue--);
   color: var(--white--);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-filters3:hover,
 .btn-filters3:focus {
   background: var(--blue--);
   color: var(--white--);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-filters4:hover,
 .btn-filters4:focus {
   background: var(--blue--);
   color: var(--white--);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-filters5:hover,
 .btn-filters5:focus {
   background: var(--blue--);
   color: var(--white--);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-filters3 {
@@ -588,6 +638,16 @@ img {
 .gruop-item {
   flex-basis: auto;
   width: 370px;
+  background: #fff;
+}
+
+.gruop-item:hover,
+.gruop-item:focus {
+  border: 1px solid #eee;
+  width: 370px;
+  height: 404px;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
 }
 
