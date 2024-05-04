@@ -54,7 +54,8 @@ img {
 /*Верхня лінія*/
 
 .header {
-  border-bottom: 1px solid var(--blue--);
+  border-bottom: 1px solid #ececec;
+  
 }
 
 .header-container {
@@ -79,6 +80,7 @@ img {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+  outline: none;
 }
 
 .logo-black {
@@ -198,6 +200,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+  width: 1600px;
+height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -207,6 +211,7 @@ img {
       rgba(47, 48, 58, 0.4) 0%,
       rgba(130, 132, 160, 0.4) 100%
     );
+    
 }
 
 .title-button {
@@ -267,17 +272,14 @@ img {
 }
 
 .feature-group {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   margin-bottom: 30px;
-}
-
-.feature-icon {
-  align-items: center;
-  justify-content: center;
-  margin-top: 25px;
 }
 
 .feature-title {
@@ -397,6 +399,11 @@ img {
 .socials-link:hover {
   background-color: var(--blue--);
 }
+
+.socials-link:focus {
+  background-color: var(--blue--);
+}
+
 .socials-icon {
   width: 20px;
   height: 20px;
@@ -405,6 +412,11 @@ img {
 
 .socials-link:hover .socials-icon,
 .socials-link:hover .socials-icon {
+  fill: #fff;
+}
+
+.socials-link:focus .socials-icon,
+.socials-link:focus .socials-icon {
   fill: #fff;
 }
 
@@ -430,12 +442,17 @@ img {
   border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--blue--);
 }
 
 .clients-icons {
   fill: #afb1b8;
+}
+
+:focus {
+  outline: none;
 }
 
 .clients-link:hover .clients-icons,
@@ -507,6 +524,10 @@ img {
 
 .socials-link {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: #fff;
 }
 
 /*Пoртфоліо*/
@@ -641,19 +662,21 @@ img {
   background: #fff;
 }
 
-.gruop-item:hover,
-.gruop-item:focus {
-  border: 1px solid #eee;
-  width: 370px;
-  height: 404px;
+.gruop-item {
+  background: #fff;
+}
+
+.link-project:hover,
+.link-project:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background: #fff;
 }
 
 .link-project {
   text-decoration: none;
+  display: block;
 }
+
 .project-portfolio {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eee;
